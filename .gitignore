@@ -3,5 +3,7 @@
 
 # Whitelist
 !.gitignore
+!.bash_profile
+!.bashrc
 !.vim
 !.vimrc*
