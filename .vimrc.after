@@ -1,1 +1,4 @@
 set colorcolumn=80
+
+scriptencoding utf-8
+set encoding=utf-8
