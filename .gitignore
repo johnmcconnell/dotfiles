@@ -7,4 +7,5 @@
 !.bashrc
 !.etc_hosts
 !.vim
-!.vimrc*
+!.vimrc.after
+!.vimrc.before
