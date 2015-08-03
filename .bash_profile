@@ -28,4 +28,4 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 [[ -s "/Users/jmcconnell1/.gvm/scripts/gvm" ]] && source "/Users/jmcconnell1/.gvm/scripts/gvm"
-source /usr/local/opt/autoenv/activate.sh
+source ~/.autoenv/activate.sh
