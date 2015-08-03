@@ -44,21 +44,10 @@ end
 
 desc 'Source bash file'
 task :source, [:skips] do |task, args|
-  logger.log task do
-    args.with_defaults(skips: '')
-
-    # Parse skips
-    skips = args.skips.split(':')
-
-    # Remove deps in skips
-    installer = Deps.new
-    dep_names = Deps::BASHFILES.reject do |name|
-      skips.include? name
-    end
-
-    # Run installation
-    installer.install(logger, dep_names)
-  end
+  puts 'Unfortunately ruby cannot source in the current terminal'.yellow
+  puts 'Please run:'.yellow
+  puts '  . ~/.source'.cyan
+  puts 'In order to source the files'.yellow
 end
 
 desc 'List dependencies'
@@ -105,7 +94,7 @@ module BashFileDeps
     filenames.each do |filename|
       path = File.expand_path("~/.#{filename}")
       define_method(filename) do
-        cmd = "source #{path}"
+        cmd = "bash #{path}"
         system cmd
       end
     end
