@@ -3,6 +3,7 @@
 
 # Whitelist
 !.gitignore
+!.git-completion.bash
 !.bash_profile
 !.bashrc
 !.etc_hosts
