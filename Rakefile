@@ -247,6 +247,9 @@ class Installer < Executor
     cmd = "sudo make install"
     sys cmd
 
+    cmd = "sudo ./scripts/setup.sh"
+    sys cmd
+
     Dir.chdir ".."
 
     cmd = "rm chruby-0.3.9.tar.gz"
