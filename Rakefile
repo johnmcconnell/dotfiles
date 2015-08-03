@@ -136,7 +136,9 @@ class Deps
   end
 
   def gvm
-    cmd = 'bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)'
+    cmd = 'curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash'
+    system cmd
+    cmd = 'source /home/jmcconnell/.gvm/scripts/gvm'
     system cmd
   end
 
