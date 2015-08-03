@@ -17,15 +17,16 @@ export GOPATH='/Users/jmcconnell1/git/gospace'
 # sbt opts for scala, increasing heap memory threshold
 export SBT_OPTS="-XX:MaxPermSize=1024M"
 
-# Select go 1.4
-gvm use go1.4
-
 # Auto env
+source ~/.autoenv/activate.sh
+
 source $HOME/.bashrc
 
+# Git completion
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-[[ -s "/Users/jmcconnell1/.gvm/scripts/gvm" ]] && source "/Users/jmcconnell1/.gvm/scripts/gvm"
-source ~/.autoenv/activate.sh
+# Source commands and select
+[[ -s ~/.gvm/scripts/gvm ]] && source ~/.gvm/scripts/gvm
+gvm use go1.4
