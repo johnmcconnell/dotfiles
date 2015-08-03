@@ -9,4 +9,5 @@
 !.etc_hosts
 !.vimrc.after
 !.vimrc.before
+!.source
 !Rakefile
