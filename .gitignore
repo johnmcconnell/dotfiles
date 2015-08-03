@@ -6,6 +6,6 @@
 !.bash_profile
 !.bashrc
 !.etc_hosts
-!.vim
 !.vimrc.after
 !.vimrc.before
+!Rakefile

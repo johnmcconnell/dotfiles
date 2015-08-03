@@ -112,3 +112,4 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 PATH="/usr/sbin:$PATH"
+source ~/.autoenv/activate.sh
