@@ -1,4 +1,9 @@
+set rnu
+
 set colorcolumn=80
+
+colorscheme aqua
+set background=dark
 
 scriptencoding utf-8
 set encoding=utf-8
