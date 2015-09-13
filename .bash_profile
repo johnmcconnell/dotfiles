@@ -14,9 +14,6 @@ fi
 # gvm setup
 [[ -s "/home/vagrant/.gvm/scripts/gvm" ]] && source "/home/vagrant/.gvm/scripts/gvm"
 
-# gopath export
-export GOPATH='/Users/jmcconnell1/git/gospace'
-
 # sbt opts for scala, increasing heap memory threshold
 export SBT_OPTS="-XX:MaxPermSize=1024M"
 
